@@ -1,0 +1,43 @@
+
+html, body {
+    margin: 0px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: black;
+    
+    height: 100px;
+    flex: 1 1 auto;
+}
+
+.footer {
+    background-color: black;
+    
+    height: 100px;
+    flex: 1 1 auto;
+}
+
+
+.library {
+    background: bisque;
+    
+    height: 90vh;
+    flex: 1 1 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap: 32px;
+}
+
+.card {
+    background-color: peachpuff;
+    border: 1px solid black;
+}
