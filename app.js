@@ -1,3 +1,5 @@
+const form = document.getElementById("myForm")
+
 let myLibrary = [];
 
 function Book(bookTitle) {
@@ -20,9 +22,10 @@ console.log(Book1.bookTitle);
 
 
 function openForm() {
-    document.getElementById("myForm").style.display = "block";
+        form.style.display = "block";
+        
   }
   
   function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+        form.style.display = "none";
   }

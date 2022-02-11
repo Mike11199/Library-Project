@@ -9,18 +9,21 @@ html, body {
     flex-direction: column;
 }
 
-h1 { color: white;
-}
-
 
 /* The popup form - hidden by default */
 .form-popup {
     display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
     position: fixed;
-    bottom: 0;
-    right: 15px;
-    border: 3px solid #f1f1f1;
+    top: 25%;
+    left: 35%;
+    border: 3px solid black;
     z-index: 9;
+    background-color: white;
+    height: 40%;
+    width: 20%;
+    color: black;
   }
 
 
@@ -55,6 +58,7 @@ h1 { color: white;
 
 #header_title {
     margin-left: 5%;
+    color: white;
 }
 
 .footer {

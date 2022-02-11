@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
     <title>Book Tracker</title>
-    <script src="app.js"></script>
+    
 </head>
 <body>
     
@@ -30,23 +30,28 @@
 
 
     <!-- Form from W3 Schools as test -->
-<div class="form-popup" id="myForm">
-    <form action="/action_page.php" class="form-container">
-        <h1>Add Book</h1>
-    
-        <label for="email"><b>Book Title</b></label>
-        <input type="text" placeholder="Enter Book Title" name="bookTitle" required>
-    
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-    
-        <button type="submit" class="btn">Add</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-    </form>
+    <div class="form-popup" id="myForm">
+        
+        <form action="/action_page.php" class="form-container">
+           
+            <h1>Add Book</h1>
+        
+            <label for="email"><b>Book Title</b></label>
+            <input type="text" placeholder="Enter Book Title" name="bookTitle" required>
+        
+            <label for="pages"><b>Pages</b></label>
+            <input type="number" placeholder="Enter Pages" name="pages" required>
+        
+            <button type="submit" class="btn">Add</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+       
+        </form>
+
     </div>
 
 
 
 
 </body>
+<script src="app.js"></script>
 </html>
