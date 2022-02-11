@@ -1,8 +1,8 @@
 let myLibrary = [];
 
-function Book() {
+function Book(bookTitle) {
 
-    // add constructor here later
+    this.bookTitle = bookTitle;
 
 
 }
@@ -11,3 +11,18 @@ function Book() {
 function addBooktoLibrary () {
     // add something here
 }
+
+const Book1 = new Book('The Odyssey');
+
+console.log(Book1.bookTitle);
+
+
+
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }

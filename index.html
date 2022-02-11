@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
     <title>Book Tracker</title>
+    <script src="app.js"></script>
 </head>
 <body>
     
     <div class="flex-container">
         <div class="header" >
             <H1 id="header_title">Book Tracker</H1>
-           <button id="addBook">Add Book</button>>
+           <button id="addBook"  onclick="openForm()">Add Book</button>>
         </div>
         <div class="library">
             <div class="grid-container">
@@ -25,6 +26,23 @@
             </div>
         </div>
         <div class="footer"></div>
+    </div>
+
+
+    <!-- Form from W3 Schools as test -->
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Add Book</h1>
+    
+        <label for="email"><b>Book Title</b></label>
+        <input type="text" placeholder="Enter Book Title" name="bookTitle" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    
+        <button type="submit" class="btn">Add</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
     </div>
 
 
