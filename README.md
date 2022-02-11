@@ -7,7 +7,7 @@ Placeholder text.
 
 <h2>Concepts learned from this project:</h2>
 
-Placeholder text.   </br>
+-Adding a form in a div that is not visible when the page first loads but can toggle visibility later on.  </br>
 
 
 <br />
