@@ -13,7 +13,7 @@
     <div class="flex-container">
         <div class="header" >
             <H1 id="header_title">Book Tracker</H1>
-           <button id="addBook"  onclick="openForm()">Add Book</button>>
+           <button id="addBook"  onclick="ToggleForm()">Add Book</button>>
         </div>
         <div class="library">
             <div class="grid-container">
@@ -34,17 +34,21 @@
         
         <form action="/action_page.php" class="form-container">
            
-            <h1>Add Book</h1>
-        
-            <label for="email"><b>Book Title</b></label>
-            <input type="text" placeholder="Enter Book Title" name="bookTitle" required>
-        
-            <label for="pages"><b>Pages</b></label>
-            <input type="number" placeholder="Enter Pages" name="pages" required>
-        
-            <button type="submit" class="btn">Add</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-       
+            <div class="grid-containter_2">
+
+                <h1>Add Book</h1>
+
+                    <label for="email"><b>Book Title</b></label>
+                    <input type="text" placeholder="Enter Book Title" name="bookTitle" required>
+
+                    <label for="pages"><b>Pages</b></label>
+                    <input type="number" placeholder="Enter Pages" name="pages" required>
+
+                    <button type="submit" class="btn">Add</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+            </div>
+
         </form>
 
     </div>

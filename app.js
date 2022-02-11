@@ -21,8 +21,16 @@ console.log(Book1.bookTitle);
 
 
 
-function openForm() {
+function ToggleForm() {
+        
+    if (form.style.display == "block") {
+        form.style.display = "none"
+    }
+    else if (form.style.display != "block") {
         form.style.display = "block";
+    }
+    
+
         
   }
   
