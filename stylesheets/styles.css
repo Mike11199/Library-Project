@@ -155,3 +155,16 @@ html, body {
     
     
 }
+
+.bookPane {
+    background-color: rgba(228, 226, 243, 0.966);
+    border-radius: 10px;
+    border: solid black 1px;
+    box-shadow:  15px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

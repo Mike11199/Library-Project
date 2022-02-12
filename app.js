@@ -5,7 +5,7 @@ const cancelBookBtnForm = document.getElementById("cancelBookBtnForm");
 const bookTitle = document.getElementById('bookTitle');
 const authorName = document.getElementById('authorName');
 const numPages = document.getElementById('numPages');
-let libraryCount="";
+let libraryCount=0;
 
 let myLibrary = [];
 
@@ -36,7 +36,6 @@ function addBooktoLibrary(e) {
     authorName.value="";
     numPages.value="";
     myLibrary.push(newBook);
-    alert(myLibrary[0].bookPages);
     addLibrarytoGrid();
 }
 
@@ -50,9 +49,12 @@ function addLibrarytoGrid () {
 
 
     let card = document.createElement("div");
-    let cardInfo = document.createElement("div");
-    card.className += `bookNum_${libraryCount}`;
+    let cardDetails = document.createElement("div");
+    card.id += `bookNum_${libraryCount}`;
+    card.className += `bookPane`;
     AddCard.before(card);
+    card.appendChild(cardDetails)
+    cardDetails.innerHTML = "<p> Book Title:" +myLibrary[libraryCount].bookTitle + "</p>"
     libraryCount++;
 
 }
