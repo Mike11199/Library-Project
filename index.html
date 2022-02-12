@@ -13,7 +13,7 @@
     <div class="flex-container">
         <div class="header" >
             <H1 id="header_title">Book Tracker</H1>
-           <button id="addBook"  onclick="ToggleForm()">Add Book</button>>
+           <button id="addBookbtn">Add Book</button>>
         </div>
         <div class="library">
             <div class="grid-container">
@@ -33,17 +33,20 @@
     <!-- Form from W3 Schools as test -->
     <div class="form-popup" id="myForm">
         
-        <form action="/action_page.php" class="form-container">
+        <form action="" class="form-container" id="bookForm">
            
             <div class="grid-containter_2">
 
                 <h1>Add Book</h1>
 
-                    <label for="email"><b>Book Title</b></label>
-                    <input type="text" placeholder="Enter Book Title" name="bookTitle" required>
+                    <label for="bookTitle"><b>Book Title</b></label>
+                    <input type="text" id="bookTitle" placeholder="Enter Book Title" value="" name="bookTitle" required>
 
-                    <label for="pages"><b>Pages</b></label>
-                    <input type="number" placeholder="Enter Pages" name="pages" required>
+                    <label for="authorName"><b>Book Author</b></label>
+                    <input type="text" id="authorName"  placeholder="Enter Author(s)" name="authorName" required>
+
+                    <label for="numPages"><b>Pages</b></label>
+                    <input type="number" id="numPages" placeholder="Enter Page Count" name="numPages" required>
 
                     <button type="submit" class="btn" id="addBookBtnForm">Add</button>
                     <button type="button" class="btn cancel" id="cancelBookBtnForm" onclick="closeForm()">Close</button>

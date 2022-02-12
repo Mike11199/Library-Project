@@ -20,8 +20,8 @@ html, body {
     left: 35%;
     border: 3px solid black;
     z-index: 9;
-    background-color: whitesmoke;
-    height: 40%;
+    background-color: whitesmoke ;
+    height: 50%;
     width: 20%;
     color: black;
   }
@@ -44,7 +44,7 @@ html, body {
     flex: 1 1 auto;
 }
 
-#addBook {
+#addBookbtn {
     background-color: darkgreen;
     border: 0px;
     height: 45%;
