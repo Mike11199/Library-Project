@@ -16,8 +16,8 @@ html, body {
     flex-direction: column;
     flex-wrap: wrap;
     position: fixed;
-    top: 25%;
-    left: 35%;
+    top: 22%;
+    left: 37%;
     border: 3px solid black;
     z-index: 9;
     background-color: rgba(245, 245, 245, 0.425) ;
