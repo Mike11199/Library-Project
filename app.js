@@ -45,8 +45,6 @@ function addBooktoLibrary(e) {
 
 //This will take the object created by the addBooktoLibrary function and add it to card in the page grid.  It adds to the previous div, the AddCard div.
 function addLibrarytoGrid () {
-    
-
 
     let card = document.createElement("div");
     let cardDetails = document.createElement("div");
@@ -54,7 +52,9 @@ function addLibrarytoGrid () {
     card.className += `bookPane`;
     AddCard.before(card);
     card.appendChild(cardDetails)
-    cardDetails.innerHTML = "<p> Book Title:" +myLibrary[libraryCount].bookTitle + "</p>"
+    cardDetails.innerHTML += "<p>" +myLibrary[libraryCount].bookTitle + "</p>"
+    cardDetails.innerHTML += "<p>" +myLibrary[libraryCount].bookAuthor + "</p>"
+    cardDetails.innerHTML += "<p>" +myLibrary[libraryCount].bookPages + "</p>"
     libraryCount++;
 
 }
