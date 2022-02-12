@@ -20,4 +20,5 @@ Placeholder text.
 
 <h2>Desktop Screenshots</h2>
 
-![1](https://user-images.githubusercontent.com/91037796/153693824-a9b4e3be-2da1-49f3-bd8d-8cd6375d8fb9.png)
+![1](https://user-images.githubusercontent.com/91037796/153697870-10e707c4-2842-4c04-aeb0-bf47cbce6e3c.png)
+
