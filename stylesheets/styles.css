@@ -63,13 +63,14 @@ html, body {
 
 .footer {
     background-color: black;
-    height: 100px;
-    flex: 1 1 auto;
+    height: 20px;
+    align-items: center;
+    
 }
 
 
 .library {
-    background: gray;
+    background:  rgb(116, 112, 112);
     height: 90vh;
     flex: 1 1 auto;
 }
@@ -87,7 +88,7 @@ html, body {
     background-color: rgba(51, 46, 122, 0.24);
     border-radius: 10px;
     box-shadow:  15px 5px 5px 5px rgba(0, 0, 0, 0.2);
-    border: 1px solid black;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,4 +145,13 @@ html, body {
 
 #cancelBookBtnForm:active{
     box-shadow:  inset 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.copyright {
+    color: white;
+    background-color: black;
+    margin: 0px;
+    margin-left: 90%; 
+    
+    
 }
