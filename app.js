@@ -1,6 +1,6 @@
 const form = document.getElementById("myForm")
 const addButton = document.getElementById("addBookBtnForm")
-const AddButton =  document.getElementById("addBookbtn")
+const AddButton =  document.getElementById("add_card")
 const loginForm = document.getElementById("bookForm");
 const cancelBookBtnForm = document.getElementById("cancelBookBtnForm");
 const bookTitle = document.getElementById('bookTitle');
@@ -42,9 +42,16 @@ function addBooktoLibrary(e) {
 
 
 
+
+
 //This will take the object created by the addBooktoLibrary function and add it to card in the page grid
 function addLibrarytoGrid () {
     
+    let card = document.createElement("div");
+    let cardInfo = document.createElement("div");
+    card.className += `book added bookNum_${index}`;
+
+
 
 }
 
