@@ -42,6 +42,14 @@ function addBooktoLibrary(e) {
 
 
 
+//This will take the object created by the addBooktoLibrary function and add it to card in the page grid
+function addLibrarytoGrid () {
+    
+
+}
+
+
+
 
 
 //This lets the add book button be able to open and close the form depending on its state
