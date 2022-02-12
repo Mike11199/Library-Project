@@ -57,7 +57,8 @@ html, body {
 
 #header_title {
     margin-left: 5%;
-    color: white;
+    color:  #ddd;;
+    font-weight: 100;
 }
 
 .footer {
