@@ -8,7 +8,8 @@ Placeholder text.
 <h2>Concepts learned from this project:</h2>
 
 -Adding a form in a div that is not visible when the page first loads but can toggle visibility later on.  </br>
-
+-Adding e.preventDefault() so that values can be grabbed from the form and stored in variables.  </br>
+-Creating an object using a constructor so that variables from the form can be saved in a new object. </br>
 
 <br />
 
