@@ -37,7 +37,7 @@ html, body {
 
 
 .header {
-    background: linear-gradient(360deg, #524f4f 10%, #6d6868 360%);
+    background: linear-gradient(360deg, #1d1c1c 10%, #0f0f0f 360%);
     display: flex;
     flex-direction: row;
     height: 80px;
@@ -56,7 +56,7 @@ html, body {
 }
 
 #header_title {
-    margin-left: 5%;
+    margin-left: 2%;
     color:  rgb(255, 255, 255);;
     font-weight: 100;
 }
@@ -70,9 +70,11 @@ html, body {
 
 
 .library {
-    background: linear-gradient(360deg, #1C1C1C 10%, #494949 360%);
+    background: linear-gradient(360deg, #353434 10%, #494949 360%);
     height: 90vh;
     flex: 1 1 auto;
+    
+    margin: 0px;
 }
 
 .grid-container {
