@@ -37,7 +37,7 @@ html, body {
 
 
 .header {
-    background-color: black;
+    background: linear-gradient(360deg, #524f4f 10%, #6d6868 360%);
     display: flex;
     flex-direction: row;
     height: 80px;
@@ -57,7 +57,7 @@ html, body {
 
 #header_title {
     margin-left: 5%;
-    color:  #ddd;;
+    color:  rgb(255, 255, 255);;
     font-weight: 100;
 }
 
@@ -70,7 +70,7 @@ html, body {
 
 
 .library {
-    background:  rgb(116, 112, 112);
+    background: linear-gradient(360deg, #1C1C1C 10%, #494949 360%);
     height: 90vh;
     flex: 1 1 auto;
 }
@@ -85,7 +85,7 @@ html, body {
 
 .add_card {
    
-    background-color: rgba(51, 46, 122, 0.24);
+    background-color: rgba(51, 46, 122, 0.685);
     border-radius: 10px;
     box-shadow:  15px 5px 5px 5px rgba(0, 0, 0, 0.2);
     
@@ -97,11 +97,11 @@ html, body {
 }
 
 .add_card:hover {
-    background-color: rgba(51, 46, 122, 0.432);
+    background-color: rgba(51, 46, 122, 0.808);
 }
 
 .add_card:active {
-    background-color: rgba(57, 53, 141, 0.589);
+    background-color: rgba(63, 58, 172, 0.781);
 }
 
 
