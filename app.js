@@ -1,19 +1,18 @@
 const form = document.getElementById("myForm")
-const addButton = document.getElementById("addBookBtnForm")
-const AddButton =  document.getElementById("add_card")
+const AddCard =  document.getElementById("add_card")
 const loginForm = document.getElementById("bookForm");
 const cancelBookBtnForm = document.getElementById("cancelBookBtnForm");
 const bookTitle = document.getElementById('bookTitle');
 const authorName = document.getElementById('authorName');
 const numPages = document.getElementById('numPages');
-
+let libraryCount="";
 
 let myLibrary = [];
 
 
 
 loginForm.addEventListener("submit", addBooktoLibrary);
-AddButton.addEventListener("click", ToggleForm);
+AddCard.addEventListener("click", ToggleForm);
 cancelBookBtnForm.addEventListener("click",closeForm);
 
 
@@ -38,20 +37,23 @@ function addBooktoLibrary(e) {
     numPages.value="";
     myLibrary.push(newBook);
     alert(myLibrary[0].bookPages);
+    addLibrarytoGrid();
 }
 
 
 
 
 
-//This will take the object created by the addBooktoLibrary function and add it to card in the page grid
+//This will take the object created by the addBooktoLibrary function and add it to card in the page grid.  It adds to the previous div, the AddCard div.
 function addLibrarytoGrid () {
     
+
+
     let card = document.createElement("div");
     let cardInfo = document.createElement("div");
-    card.className += `book added bookNum_${index}`;
-
-
+    card.className += `bookNum_${libraryCount}`;
+    AddCard.before(card);
+    libraryCount++;
 
 }
 
