@@ -68,11 +68,11 @@ function ToggleForm() {
         
     if (form.style.display == "block") {
         form.style.display = "none";
-        form.style.boxShadow = "0px 0px 1px 5000px rgba(0,0,0,0.4)";
+        
     }
     else if (form.style.display != "block") {
         form.style.display = "block";
-        form.style.boxShadow = "0px 0px 1px 5000px rgba(0,0,0,0.4)";
+        
       
     }
     }

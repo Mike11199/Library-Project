@@ -16,13 +16,13 @@ html, body {
     flex-direction: column;
     flex-wrap: wrap;
     position: fixed;
-    top: 22%;
+    top: 14%;
     left: 37%;
     border: 3px solid black;
     z-index: 9;
-    background-color: rgba(129, 126, 126, 0.959) ;
-    height: 50%;
-    width: 20%;
+    background-color: rgba(124, 128, 136, 0.959);
+    height: 60%;
+    width: 27%;
     border-radius: 15px;
     color: black;
   }
@@ -159,7 +159,7 @@ html, body {
 }
 
 .bookPane {
-    background-color: rgba(228, 226, 243, 0.966);
+    background-color: rgba(181, 180, 192, 0.966);
     border-radius: 10px;
     border: solid black 1px;
     box-shadow:  15px 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -168,5 +168,10 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+input {
+height: 30px;
 
 }
