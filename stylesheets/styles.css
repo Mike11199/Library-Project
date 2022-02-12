@@ -20,7 +20,7 @@ html, body {
     left: 35%;
     border: 3px solid black;
     z-index: 9;
-    background-color: rgba(245, 245, 245, 0.767) ;
+    background-color: rgba(245, 245, 245, 0.596) ;
     height: 50%;
     width: 20%;
     border-radius: 5px;
@@ -43,6 +43,8 @@ html, body {
     height: 100px;
     align-items: center;
     flex: 1 1 auto;
+    
+    
 }
 
 
@@ -67,7 +69,6 @@ html, body {
 
 .library {
     background: gray;
-    
     height: 90vh;
     flex: 1 1 auto;
 }
@@ -82,7 +83,7 @@ html, body {
 
 .add_card {
    
-    background-color: rgba(245, 245, 245, 0.315);
+    background-color: rgba(51, 46, 122, 0.24);
     border-radius: 10px;
     box-shadow:  15px 5px 5px 5px rgba(0, 0, 0, 0.2);
     border: 1px solid black;
@@ -90,21 +91,28 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+
+.add_card:hover {
+    background-color: rgba(51, 46, 122, 0.432);
 }
 
 .add_card:active {
-    background-color: rgba(245, 245, 245, 0.432);
-    
+    background-color: rgba(57, 53, 141, 0.589);
 }
 
 
 
 #add_book{
-    
     justify-content: center;
     height: 60px;
     align-items: center;
+    opacity: 50%;
 }
+
+
+
 
 #addBookBtnForm{
     background-color: darkgreen;
@@ -123,7 +131,6 @@ html, body {
 
 
 #cancelBookBtnForm{
-
     background-color: darkred;
     border: none;
     color: white;
