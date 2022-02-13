@@ -3,6 +3,7 @@ const AddCard =  document.getElementById("add_card")
 const loginForm = document.getElementById("bookForm");
 const cancelBookBtnForm = document.getElementById("cancelBookBtnForm");
 
+const libraryGrid = document.getElementById("grid-container");
 const bookTitle = document.getElementById('bookTitle');
 const authorName = document.getElementById('authorName');
 const numPages = document.getElementById('numPages');
@@ -46,24 +47,41 @@ function addBooktoLibrary(e) {
     bookTitle.value="";
     authorName.value="";
     numPages.value="";
-    //add new book object entered in form to myLibrary array of objects
-    myLibrary.push(newBook);
-    //Adds everything in the library to the grid
-    addLibrarytoGrid();
+    bookCover.value="";
+    //add new book object entered in form to myLibrary array of objects ONLY IF the object's title is not already in the 
+    //myLibrary array.
+    if (!containsDuplicate(newBook, myLibrary))
+    {
+        myLibrary.push(newBook);
+         //Adds the LAST object in the library to the grid only
+        AddCard.before(createLibraryCard(myLibrary[myLibrary.length-1]));
+    }
+    
+   
+}
+
+
+function containsDuplicate(obj, list) {
+    var i;
+    for (i = 0; i < list.length; i++) {
+        if (list[i].bookTitle === obj.bookTitle) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 
 
-
-
 //This will take all objects in the myLibrary array and add it to cards in the page grid.  It adds to the previous div, the AddCard div.
-function addLibrarytoGrid () {
+function addEntireLibrarytoGrid () {
 
     //Loop through array of book objects in the library array --  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
     // for 'const' book used instead of 'let as 'let' would require book++ at end of the 'for' statement
     for (let i = 0, l = myLibrary.length; i < l; i++)
     {
-    AddCard.before(createLibraryCard(myLibrary[i]));
+        AddCard.before(createLibraryCard(myLibrary[i]));
     }
 
 }
@@ -100,13 +118,31 @@ const createLibraryCard = (book) => {
 
    //This uses .appendChild to add all the elements to the main div libraryCard.  This is the Div added to the grid. 
     libraryCard.appendChild(bookCover)
-    
-    bookCover.appendChild(bookTitle)
-    bookCover.appendChild(bookAuthor)
-    bookCover.appendChild(bookPages)
+    libraryCard.appendChild(bookTitle)
+    libraryCard.appendChild(bookAuthor)
+    libraryCard.appendChild(bookPages)
 
-    bookCover.appendChild(readButton)
-    bookCover.appendChild(deleteButton)
+    libraryCard.appendChild(readButton)
+    libraryCard.appendChild(deleteButton)
+
+    //on mouseover hide the book cover and show the title, book pages, isread, etc.
+    libraryCard.addEventListener("mouseover", function(event)  {
+        bookCover.style.display = "none";
+        bookTitle.style.display = "block";
+        bookAuthor.style.display = "block";
+        bookPages.style.display = "block";
+        readButton.style.display = "block";
+        deleteButton.style.display = "block";
+    });
+
+    libraryCard.addEventListener("mouseout", function(event)  {
+        bookCover.style.display = "block";
+        bookTitle.style.display = "none";
+        bookAuthor.style.display = "none";
+        bookPages.style.display = "none";
+        readButton.style.display = "none";
+        deleteButton.style.display = "none";
+    });
 
     return libraryCard;
 

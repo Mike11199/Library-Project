@@ -188,6 +188,7 @@ html, body {
     margin-right: auto;
     align-self:center;
     z-index: 2;
+    display: none;
 }
 
 .bookAuthor {
@@ -195,6 +196,7 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     align-self:center;
+    display: none;
 }
 
 .bookPages {
@@ -202,6 +204,7 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     align-self:center;
+    display: none;
 }
 
 .bookCover {
@@ -216,10 +219,14 @@ html, body {
 
 .readButton{
     height: 50px;
+    display: none;
+    background-color: darkgray;
 }
 
 .deleteButton{
     height: 50px;
+    display: none;
+    background-color: darkred;
 }
 
 
