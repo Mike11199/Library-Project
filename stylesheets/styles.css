@@ -76,7 +76,7 @@ html, body {
 
 .library {
     background: linear-gradient(360deg, #353434 10%, #494949 360%);
-    height: 90vh;
+    height: auto;
     flex: 1 1 auto;
     
     margin: 0px;
@@ -85,8 +85,8 @@ html, body {
 .grid-container {
     margin: 5vh ;
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 300px 300px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 300px 300px 300px 300px;
     gap: 80px;
 }
 
@@ -161,14 +161,6 @@ html, body {
     border: none;
     color: white;
     height: 40px;
-}
-
-#isRead:hover{
-    background-color: rgb(44, 43, 43);
-}
-
-#isRead:active{
-    box-shadow:  inset 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 

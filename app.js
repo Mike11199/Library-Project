@@ -11,6 +11,23 @@ const bookCover = document.getElementById('bookCover');
 const isRead = document.getElementById('isRead');
 
 
+isRead.addEventListener("click",function(event){
+
+ 
+
+    if (isRead.value == "yes") {
+        isRead.value = "no";
+        isRead.style.backgroundColor="rgb(20, 20, 20)";
+    }
+    else if (isRead.value == "no") {
+        isRead.value = "yes";
+        isRead.style.backgroundColor="rgb(46, 92, 168)";
+    }
+
+})
+
+
+
 let libraryCount=0;
 
 
@@ -107,6 +124,39 @@ const createLibraryCard = (book) => {
     readButton.classList.add("readButton");
     deleteButton.classList.add("deleteButton");
 
+    deleteButton.innerHTML = "Delete Book";
+
+    if (book.isRead == "no") {
+        readButton.value = "no";
+        readButton.innerHTML = "Not Read";
+        readButton.style.backgroundColor = "darkgray"
+    }
+    else if (book.isRead == "yes") {
+        readButton.value = "yes";
+        readButton.innerHTML = "Read";
+        readButton.style.backgroundColor = "darkgreen"
+    }
+
+    
+
+    readButton.addEventListener("click", function(event) {
+        if (readButton.value == "no") {
+           
+            readButton.value = "yes";
+            readButton.innerHTML = "Read";
+            readButton.style.backgroundColor = "darkgreen"
+        }
+        else if (readButton.value == "yes") {
+            readButton.value = "no";
+            readButton.innerHTML = "Not Read";
+            readButton.style.backgroundColor = "darkgray"
+        }
+    })
+
+
+    isRead.value = "no";
+    isRead.style.backgroundColor="rgb(20, 20, 20)";
+
 
     //This take the book object passed into this function and assigns its properties (title, author, etc.) to the divs
     //and elements created for the library card.
@@ -117,7 +167,9 @@ const createLibraryCard = (book) => {
 
 
    //This uses .appendChild to add all the elements to the main div libraryCard.  This is the Div added to the grid. 
+   
     libraryCard.appendChild(bookCover)
+    
     libraryCard.appendChild(bookTitle)
     libraryCard.appendChild(bookAuthor)
     libraryCard.appendChild(bookPages)
@@ -144,13 +196,11 @@ const createLibraryCard = (book) => {
         deleteButton.style.display = "none";
     });
 
+   
+
     return libraryCard;
 
 }
-
-
-
-
 
 
 
@@ -178,4 +228,6 @@ function ToggleForm() {
         bookTitle.value="";
         authorName.value="";
         numPages.value="";
+        isRead.value = "no";
+        isRead.style.backgroundColor="rgb(20, 20, 20)";
   }
