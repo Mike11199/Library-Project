@@ -1,7 +1,12 @@
 
+* {
+    /* border: solid red 1px; */
+}
+
 html, body {
     margin: 0px;
     font-family:Arial, Helvetica, sans-serif;
+    
 }
 
 .flex-container {
@@ -21,7 +26,7 @@ html, body {
     border: 3px solid black;
     z-index: 9;
     background-color: rgba(124, 128, 136, 0.959);
-    height: 60%;
+    height: 70%;
     width: 27%;
     border-radius: 15px;
     color: black;
@@ -82,7 +87,7 @@ html, body {
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
     grid-template-rows: 300px 300px;
-    gap: 32px;
+    gap: 80px;
 }
 
 .add_card {
@@ -158,21 +163,69 @@ html, body {
     
 }
 
-.bookPane {
+.libraryCard {
     background-color: rgba(181, 180, 192, 0.966);
-    border-radius: 10px;
+    
     border: solid black 1px;
     box-shadow:  15px 5px 5px 5px rgba(0, 0, 0, 0.2);
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0px;
+    display: grid;
+    z-index: 1;
+    width:200px;
+    height: 300px;
 
+    grid-template-rows: 20% ;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    
 }
 
+.bookTitle {
+    
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self:center;
+    z-index: 2;
+}
+
+.bookAuthor {
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self:center;
+}
+
+.bookPages {
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self:center;
+}
+
+.bookCover {
+    width:200px;
+    height: 300px;
+}
+
+.bookCover:hover {
+    opacity: 10%;
+}
+
+
+.readButton{
+    height: 50px;
+}
+
+.deleteButton{
+    height: 50px;
+}
+
+
+
 input {
-height: 30px;
+    height: 30px;
 
 }
 
@@ -181,5 +234,7 @@ input:focus {
     outline: none;
     border-color: rgb(65, 110, 196);
     box-shadow: 0 0 10px #719ECE;
-    
     }
+
+
+
