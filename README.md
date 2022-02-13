@@ -1,7 +1,7 @@
 # Library-Project
 
 
-Placeholder text.
+A tracker that allows books to be stored in a grid format and marked as read, or deleted from the list.  Supports book cover images if an URL is added in the add book dialog form pop up.
 
 <br />
 
