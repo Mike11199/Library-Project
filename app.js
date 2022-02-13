@@ -172,8 +172,15 @@ const createLibraryCard = (book) => {
     bookCover.src= book.bookCover;
     libraryCard.appendChild(bookCover)
 
-    console.log(bookCover.width)
-    
+
+    //hide the image if the URl is bad
+    bookCover.addEventListener('error', function handleError() {
+        console.log(bookCover.src);
+        bookCover.style.display = 'none';
+        libraryCard.style.backgroundColor= "darkgray";
+    })
+
+
     //This uses .appendChild to add all the elements to the main div libraryCard.  This is the Div added to the grid. 
     libraryCard.appendChild(bookTitle)
     libraryCard.appendChild(bookAuthor)
