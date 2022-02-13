@@ -21,12 +21,12 @@ html, body {
     flex-direction: column;
     flex-wrap: wrap;
     position: fixed;
-    top: 14%;
+    top: 12%;
     left: 37%;
     border: 3px solid black;
     z-index: 9;
     background-color: rgba(124, 128, 136, 0.959);
-    height: 70%;
+    height: 80%;
     width: 27%;
     border-radius: 15px;
     color: black;
