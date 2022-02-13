@@ -176,7 +176,7 @@ html, body {
 }
 
 .libraryCard {
-    background-color: rgba(181, 180, 192, 0.966);
+   
     
     border: solid black 1px;
     box-shadow:  15px 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -200,7 +200,8 @@ html, body {
     margin-right: auto;
     align-self:center;
     z-index: 2;
-    display: none;
+    opacity: 50%;
+    z-index: 122;
 }
 
 .bookAuthor {
@@ -208,7 +209,8 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     align-self:center;
-    display: none;
+    opacity: 50%;
+    z-index: 122;
 }
 
 .bookPages {
@@ -216,29 +218,33 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     align-self:center;
-    display: none;
+    opacity: 50%;
+    z-index: 122;
 }
 
 .bookCover {
     width:200px;
     height: 300px;
+    z-index: 1;
 }
 
-.bookCover:hover {
+/* .bookCover:hover {
     opacity: 10%;
-}
+} */
 
 
 .readButton{
     height: 50px;
-    display: none;
+    opacity: 0%;
     background-color: darkgray;
+    z-index: 122;
 }
 
 .deleteButton{
     height: 50px;
-    display: none;
+    opacity: 0%;
     background-color: darkred;
+    z-index: 122;
 }
 
 

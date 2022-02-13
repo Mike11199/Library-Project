@@ -163,13 +163,18 @@ const createLibraryCard = (book) => {
     bookTitle.textContent = book.bookTitle;
     bookAuthor.textContent = book.bookAuthor;
     bookPages.textContent = book.bookPages;
-    bookCover.src= book.bookCover;
-
-
-   //This uses .appendChild to add all the elements to the main div libraryCard.  This is the Div added to the grid. 
-   
-    libraryCard.appendChild(bookCover)
     
+
+
+   
+   
+
+    bookCover.src= book.bookCover;
+    libraryCard.appendChild(bookCover)
+
+    console.log(bookCover.width)
+    
+    //This uses .appendChild to add all the elements to the main div libraryCard.  This is the Div added to the grid. 
     libraryCard.appendChild(bookTitle)
     libraryCard.appendChild(bookAuthor)
     libraryCard.appendChild(bookPages)
@@ -177,23 +182,26 @@ const createLibraryCard = (book) => {
     libraryCard.appendChild(readButton)
     libraryCard.appendChild(deleteButton)
 
+
+    
     //on mouseover hide the book cover and show the title, book pages, isread, etc.
     libraryCard.addEventListener("mouseover", function(event)  {
-        bookCover.style.display = "none";
-        bookTitle.style.display = "block";
-        bookAuthor.style.display = "block";
-        bookPages.style.display = "block";
-        readButton.style.display = "block";
-        deleteButton.style.display = "block";
+        bookCover.style.opacity= "10%";
+        readButton.style.opacity= "70%";
+        deleteButton.style.opacity= "70%";
+        bookTitle.style.opacity= "70%";
+        bookAuthor.style.opacity= "70%";
+        bookPages.style.opacity= "70%";
+
     });
 
     libraryCard.addEventListener("mouseout", function(event)  {
-        bookCover.style.display = "block";
-        bookTitle.style.display = "none";
-        bookAuthor.style.display = "none";
-        bookPages.style.display = "none";
-        readButton.style.display = "none";
-        deleteButton.style.display = "none";
+        bookCover.style.opacity= "100%";
+        readButton.style.opacity= "0%";
+        deleteButton.style.opacity= "0%";
+        bookTitle.style.opacity= "0%";
+        bookAuthor.style.opacity= "0%";
+        bookPages.style.opacity= "0%";
     });
 
    
@@ -231,3 +239,5 @@ function ToggleForm() {
         isRead.value = "no";
         isRead.style.backgroundColor="rgb(20, 20, 20)";
   }
+
+
