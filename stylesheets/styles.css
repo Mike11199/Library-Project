@@ -154,6 +154,26 @@ html, body {
     box-shadow:  inset 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+
+
+#isRead{
+    background-color: rgb(20, 20, 20);
+    border: none;
+    color: white;
+    height: 40px;
+}
+
+#isRead:hover{
+    background-color: rgb(44, 43, 43);
+}
+
+#isRead:active{
+    box-shadow:  inset 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
 .copyright {
     color: white;
     background-color: black;
