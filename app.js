@@ -8,8 +8,8 @@ const bookTitle = document.getElementById('bookTitle');
 const authorName = document.getElementById('authorName');
 const numPages = document.getElementById('numPages');
 const bookCover = document.getElementById('bookCover');
-const isReadChecked = document.getElementById('isRead');
-let isRead = isReadChecked.checked;
+const isRead = document.getElementById('isRead');
+
 
 let libraryCount=0;
 
