@@ -12,6 +12,7 @@ A tracker that allows books to be stored in a grid format and marked as read, or
 -Using a constructor so that variables from the form can be saved in a new object created from that constructor. </br></br>
 -Using document.createElement and the .classList.add or .classList.remove to create/remove HTML elements such as divs, buttons, p tags, and add classes to them.</br></br>
 -Using document.appendChild to add a created element to the HTML DOM.</br></br>
+-Using relative positioning, event listeners to trigger opacity, and z-index so that the book title, pages, and author and buttons are only displayed when you hover over the book card's thumbnail.</br></br>
 
 
 
