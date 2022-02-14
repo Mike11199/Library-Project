@@ -285,7 +285,7 @@ const saveLibrarytoLocalStorage = () => {
 
 const pullLibraryfromLocalStorage = () => {
     let StoredLibrary = JSON.parse(localStorage.getItem("myLibrary"));
-    console.log("This is what was retrieved from local storage " + StoredLibrary[1].bookAuthor);
+    console.log("This is what was retrieved from local storage " + StoredLibrary[0].bookAuthor);
     
     for(i = 0; i < StoredLibrary.length; i++){
         JSONToBook(StoredLibrary[i]);
