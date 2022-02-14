@@ -328,6 +328,8 @@ pullLibraryfromLocalStorage();
 function loadSampleLibrary (){
 
 
+    myLibrary.splice(0,myLibrary.length);
+
     let book1 = new Book('Foundation', 'Issac Asimov', '343', 'yes', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg') 
     let book2 = new Book('The Universe in a Nutshell', 'Stephen Hawking', '332', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/81bKX7EA4cL.jpg') 
    
@@ -347,7 +349,7 @@ function loadSampleLibrary (){
     myLibrary.push(book8);
 
     addEntireLibrarytoGrid();
-    
+    saveLibrarytoLocalStorage();
 
 
 }
