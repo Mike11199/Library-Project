@@ -319,6 +319,9 @@ function findLibraryBookbyBookTitle (title)  {
  
 }
 
+
+
+//This section for if a sample library wants to be loaded in temporarily (does not override local storage.)
 let text = "Do you want to load a sample library?\n\nClick OK for yes, or CANCEL for no.";
   if (confirm(text) == true) {
     loadSampleLibrary();
@@ -326,20 +329,18 @@ let text = "Do you want to load a sample library?\n\nClick OK for yes, or CANCEL
     pullLibraryfromLocalStorage();
   }
 
-function loadSampleLibrary (){
 
-        
-  
+function loadSampleLibrary (){
 
 
     let book1 = new Book('Foundation', 'Issac Asimov', '343', 'yes', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg') 
-    let book2 = new Book('The Universe in a Nutshell', 'Issac Asimov', '343', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/81bKX7EA4cL.jpg') 
-    let book3 = new Book('The Drunkards Walk', 'Issac Asimov', '343', 'yes', 'https://upload.wikimedia.org/wikipedia/en/thumb/3/…kard%27s_Walk.jpg/220px-The_Drunkard%27s_Walk.jpg') 
-    let book4 = new Book('Sapiens: A Brief History of Humankind', 'Issac Asimov', '343', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL.jpg') 
-    let book5 = new Book('Eiger Dreams', 'Issac Asimov', '343', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/51P8Hpa264L._SX331_BO1,204,203,200_.jpg') 
-    let book6 = new Book('Timeline', 'Issac Asimov', '343', 'yes', 'https://upload.wikimedia.org/wikipedia/en/thumb/0/…n_Timeline.jpg/220px-MichaelCrighton_Timeline.jpg')
-    let book7 = new Book('Outliers', 'Issac Asimov', '343', 'yes', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1271440150l/7630041.jpg')
-    let book8 = new Book('1984', 'Issac Asimov', '343', 'yes', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/1984first.jpg/220px-1984first.jpg')
+    let book2 = new Book('The Universe in a Nutshell', 'Stephen Hawking', '332', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/81bKX7EA4cL.jpg') 
+    let book3 = new Book('The Drunkards Walk', 'Leonard Mlodinow', '272', 'yes', 'https://upload.wikimedia.org/wikipedia/en/thumb/3/…kard%27s_Walk.jpg/220px-The_Drunkard%27s_Walk.jpg') 
+    let book4 = new Book('Sapiens: A Brief History of Humankind', 'Yuval Noah Harari', '281', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL.jpg') 
+    let book5 = new Book('Eiger Dreams', 'Jon Krauker', '323', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/51P8Hpa264L._SX331_BO1,204,203,200_.jpg') 
+    let book6 = new Book('Timeline', 'Michael Crichton', '363', 'no', 'https://upload.wikimedia.org/wikipedia/en/thumb/0/…n_Timeline.jpg/220px-MichaelCrighton_Timeline.jpg')
+    let book7 = new Book('Outliers', 'Malcom Gladwell', '453', 'no', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1271440150l/7630041.jpg')
+    let book8 = new Book('1984', 'George Orwell', '263', 'yes', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/1984first.jpg/220px-1984first.jpg')
 
     myLibrary.push(book1);
     myLibrary.push(book2);
@@ -352,16 +353,6 @@ function loadSampleLibrary (){
 
     addEntireLibrarytoGrid();
     
-
-// 0: Book {bookTitle: 'Foundation', bookAuthor: 'Issac Asimov', bookPages: '343', isRead: 'no', bookCover: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg'}
-// 1: Book {bookTitle: 'The Universe in a Nutshell', bookAuthor: 'Stephen Hawking', bookPages: '332', isRead: 'yes', bookCover: 'https://images-na.ssl-images-amazon.com/images/I/81bKX7EA4cL.jpg'}
-// 2: Book {bookTitle: "The Drunkard's Walk", bookAuthor: 'Leonard Mlodinow', bookPages: '272', isRead: 'no', bookCover: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/…kard%27s_Walk.jpg/220px-The_Drunkard%27s_Walk.jpg'}
-// 3: Book {bookTitle: 'Sapiens: A Brief History of Humankind', bookAuthor: 'Yuval Noah Harari', bookPages: '281', isRead: 'no', bookCover: 'https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL.jpg'}
-// 4: Book {bookTitle: 'Eiger Dreams', bookAuthor: 'Jon Krauker', bookPages: '323', isRead: 'no', bookCover: 'https://images-na.ssl-images-amazon.com/images/I/51P8Hpa264L._SX331_BO1,204,203,200_.jpg'}
-// 5: Book {bookTitle: 'Timeline', bookAuthor: 'Michael Crichton', bookPages: '132', isRead: 'no', bookCover: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/…n_Timeline.jpg/220px-MichaelCrighton_Timeline.jpg'}
-// 6: Book {bookTitle: 'Outliers', bookAuthor: 'Malcom Gladwell', bookPages: '343', isRead: 'yes', bookCover: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1271440150l/7630041.jpg'}
-// 7: Book {bookTitle: '1984', bookAuthor: 'George Orwell', bookPages: '343', isRead: 'no', bookCover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/1984first.jpg/220px-1984first.jpg'}
-
 
 
 }
