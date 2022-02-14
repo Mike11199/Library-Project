@@ -157,7 +157,16 @@ const createLibraryCard = (book) => {
     })
 
     deleteButton.addEventListener("click", function(e) {
+        
+        //this deletes from webpage
         deleteButton.parentNode.parentNode.removeChild(deleteButton.parentNode);
+        
+        //this deletes from local storage also using findLibrarybyBookTitle Function
+        test = deleteButton.parentNode.childNodes
+        console.log(test[1].innerHTML);
+        myLibrary.splice(findLibraryBookbyBookTitle(test[1].innerHTML),1);
+        saveLibrarytoLocalStorage();
+
     })
 
 
@@ -297,3 +306,15 @@ const JSONToBook = (book) => {
 
 pullLibraryfromLocalStorage();
 
+
+function findLibraryBookbyBookTitle (title)  {
+
+    for(i = 0; i < myLibrary.length; i++)
+        {
+            if (myLibrary[i].bookTitle == title)
+            {
+            return i
+            }
+        }
+ 
+}
