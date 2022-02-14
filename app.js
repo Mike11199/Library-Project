@@ -282,7 +282,7 @@ const saveLibrarytoLocalStorage = () => {
 
 
 //https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage
-//Credit to https://github.com/drewrox2009/BOOK-D/blob/main/script.js followed this fror guidance although my function works differnetly
+
 const pullLibraryfromLocalStorage = () => {
     let StoredLibrary = JSON.parse(localStorage.getItem("myLibrary"));
     console.log("This is what was retrieved from local storage " + StoredLibrary[1].bookAuthor);
