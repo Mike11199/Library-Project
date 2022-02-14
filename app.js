@@ -156,6 +156,10 @@ const createLibraryCard = (book) => {
         }
     })
 
+    deleteButton.addEventListener("click", function(e) {
+        deleteButton.parentNode.parentNode.removeChild(deleteButton.parentNode);
+    })
+
 
     isRead.value = "no";
     isRead.style.backgroundColor="rgb(20, 20, 20)";
