@@ -85,7 +85,7 @@ html, body {
 .grid-container {
     margin: 5vh ;
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
     grid-template-rows: 300px 300px 300px 300px;
     gap: 80px;
 }
