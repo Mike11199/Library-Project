@@ -321,7 +321,6 @@ function findLibraryBookbyBookTitle (title)  {
 
 
 
-
 pullLibraryfromLocalStorage();
 
 
@@ -348,7 +347,7 @@ function loadSampleLibrary (){
     myLibrary.push(book7);
     myLibrary.push(book8);
 
-    
+
     addEntireLibrarytoGrid();
     saveLibrarytoLocalStorage();
 
