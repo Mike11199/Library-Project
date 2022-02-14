@@ -321,13 +321,8 @@ function findLibraryBookbyBookTitle (title)  {
 
 
 
-//This section for if a sample library wants to be loaded in temporarily (does not override local storage.)
-let text = "Do you want to load a sample library?\n\nClick OK for yes, or CANCEL for no.";
-  if (confirm(text) == true) {
-    loadSampleLibrary();
-  } else {
-    pullLibraryfromLocalStorage();
-  }
+
+pullLibraryfromLocalStorage();
 
 
 function loadSampleLibrary (){
