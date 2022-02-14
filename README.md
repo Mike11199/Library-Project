@@ -17,6 +17,7 @@ A tracker that allows books to be stored in a grid format and marked as read, or
 -Using document.appendChild to add a created element to the HTML DOM.</br></br>
 -Using relative positioning, event listeners to trigger opacity, and z-index so that the book title, pages, and author and buttons are only displayed when you hover over the book card's thumbnail.</br></br>
 -Learned how to save an array of objects to local storage by stringifying an array of objects into a JSON file.  Then learned how to retrieve that JSON file and parse it back into an array, and then back into an array of objects by looping over the array and calling the object constructor. This is so that users' books are loaded when returning to the website. </br></br>
+-Added a button to clear all local storage, made delete buttons on cards also delete from local storage and card div itself with parentNode.removeChild, and added a button to load a sample library of books.</br></br>
 
 
 
