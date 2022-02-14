@@ -329,14 +329,14 @@ function loadSampleLibrary (){
 
     myLibrary.splice(0,myLibrary.length);
 
-    let book1 = new Book('Foundation', 'Issac Asimov', '343', 'yes', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg') 
-    let book2 = new Book('The Universe in a Nutshell', 'Stephen Hawking', '332', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/81bKX7EA4cL.jpg') 
+    let book1 = new Book('Foundation', 'Issac Asimov', '343 pages', 'yes', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg') 
+    let book2 = new Book('The Universe in a Nutshell', 'Stephen Hawking', '332 pages', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/81bKX7EA4cL.jpg') 
    
-    let book4 = new Book('Sapiens: A Brief History of Humankind', 'Yuval Noah Harari', '281', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL.jpg') 
-    let book5 = new Book('Eiger Dreams', 'Jon Krauker', '323', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/51P8Hpa264L._SX331_BO1,204,203,200_.jpg') 
+    let book4 = new Book('Sapiens: A Brief History of Humankind', 'Yuval Noah Harari', '281 pages', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL.jpg') 
+    let book5 = new Book('Eiger Dreams', 'Jon Krauker', '323 pages', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/51P8Hpa264L._SX331_BO1,204,203,200_.jpg') 
     
-    let book7 = new Book('Outliers', 'Malcom Gladwell', '453', 'no', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1271440150l/7630041.jpg')
-    let book8 = new Book('1984', 'George Orwell', '263', 'yes', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/1984first.jpg/220px-1984first.jpg')
+    let book7 = new Book('Outliers', 'Malcom Gladwell', '453 pages', 'no', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1271440150l/7630041.jpg')
+    let book8 = new Book('1984', 'George Orwell', '263 pages', 'yes', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/1984first.jpg/220px-1984first.jpg')
 
     myLibrary.push(book1);
     myLibrary.push(book2);
