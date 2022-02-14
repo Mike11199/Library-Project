@@ -13,7 +13,7 @@
     <div class="flex-container">
         <div class="header" >
             <H1 id="header_title">Book Tracker</H1>
-         
+            <button id = "clearStorageLocal" onclick="window.localStorage.clear();">Clear All Local Storage</button>
         </div>
         <div class="library">
             <div class="grid-container" id="grid-container">
@@ -60,9 +60,34 @@
 
     </div>
 
+    
+
+    //This code section initializes Firebase for cloud storage and login authentication.  Per Firebase documentation, it is alright to publicly expose
+     the API key here.  Normally the API key should never be exposed on GitHub.
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="app.js"></script>
+
+    <script type="module">
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyASMILlg8FGGrX9F2rvIG4h4dI4DyZpeMg",
+        authDomain: "library-project-af8bb.firebaseapp.com",
+        projectId: "library-project-af8bb",
+        storageBucket: "library-project-af8bb.appspot.com",
+        messagingSenderId: "731851095788",
+        appId: "1:731851095788:web:a897cdc7397fcc394fafc9",
+        measurementId: "G-VL8YX4E5XS"
+    };
+
+    firebase.initializeApp(firebaseConfig)
+
+    </script>
 
 
 
 </body>
-<script src="app.js"></script>
+
 </html>

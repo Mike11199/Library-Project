@@ -35,6 +35,7 @@ let myLibrary = [];
 
 
 
+
 loginForm.addEventListener("submit", addBooktoLibrary);
 AddCard.addEventListener("click", ToggleForm);
 cancelBookBtnForm.addEventListener("click",closeForm);
@@ -72,6 +73,7 @@ function addBooktoLibrary(e) {
         myLibrary.push(newBook);
          //Adds the LAST object in the library to the grid only
         AddCard.before(createLibraryCard(myLibrary[myLibrary.length-1]));
+        saveLibrarytoLocalStorage();
     }
     
    
@@ -126,6 +128,7 @@ const createLibraryCard = (book) => {
 
     deleteButton.innerHTML = "Delete Book";
 
+   
     if (book.isRead == "no") {
         readButton.value = "no";
         readButton.innerHTML = "Not Read";
@@ -175,7 +178,7 @@ const createLibraryCard = (book) => {
 
     //hide the image if the URl is bad
     bookCover.addEventListener('error', function handleError() {
-        console.log(bookCover.src);
+        
         bookCover.style.display = 'none';
         libraryCard.style.backgroundColor= "darkgray";
     })
@@ -247,4 +250,46 @@ function ToggleForm() {
         isRead.style.backgroundColor="rgb(20, 20, 20)";
   }
 
+
+
+
+
+// Local Storage
+//   https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+//   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+
+const saveLibrarytoLocalStorage = () => {
+    //setItem allows storing data to local store.  JSON.stringify converts the myLibrary array into a JSON string
+    localStorage.setItem('myLibrary', JSON.stringify(myLibrary))
+    console.log("Stored into array" + JSON.parse(localStorage.getItem("myLibrary")))
+  }
+  
+
+
+
+
+//https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage
+//Credit to https://github.com/drewrox2009/BOOK-D/blob/main/script.js followed this fror guidance although my function works differnetly
+const pullLibraryfromLocalStorage = () => {
+    let StoredLibrary = JSON.parse(localStorage.getItem("myLibrary"));
+    console.log("This is what was retrieved from local storage " + StoredLibrary[1].bookAuthor);
+    
+    for(i = 0; i < StoredLibrary.length; i++){
+        JSONToBook(StoredLibrary[i]);
+         }
+         addEntireLibrarytoGrid();
+}
+
+
+
+//This 
+//Do NOT use .value here after book.bookTitle.
+const JSONToBook = (book) => {
+        
+    const newBook2 = new Book(book.bookTitle, book.bookAuthor, book.bookPages, book.isRead, book.bookCover);
+    myLibrary.push(newBook2);
+
+  }
+
+pullLibraryfromLocalStorage();
 
