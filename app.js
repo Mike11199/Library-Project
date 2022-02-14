@@ -178,7 +178,7 @@ const createLibraryCard = (book) => {
     //and elements created for the library card.
     bookTitle.textContent = book.bookTitle;
     bookAuthor.textContent = book.bookAuthor;
-    bookPages.textContent = book.bookPages;
+    bookPages.textContent = book.bookPages + "pages";
     
 
 
