@@ -335,10 +335,10 @@ function loadSampleLibrary (){
 
     let book1 = new Book('Foundation', 'Issac Asimov', '343', 'yes', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg') 
     let book2 = new Book('The Universe in a Nutshell', 'Stephen Hawking', '332', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/81bKX7EA4cL.jpg') 
-    let book3 = new Book('The Drunkards Walk', 'Leonard Mlodinow', '272', 'yes', 'https://upload.wikimedia.org/wikipedia/en/thumb/3/…kard%27s_Walk.jpg/220px-The_Drunkard%27s_Walk.jpg') 
+    let book3 = new Book('The Drunkards Walk', 'Leonard Mlodinow', '272', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/91Qt1C+4GuL.jpg') 
     let book4 = new Book('Sapiens: A Brief History of Humankind', 'Yuval Noah Harari', '281', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL.jpg') 
     let book5 = new Book('Eiger Dreams', 'Jon Krauker', '323', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/51P8Hpa264L._SX331_BO1,204,203,200_.jpg') 
-    let book6 = new Book('Timeline', 'Michael Crichton', '363', 'no', 'https://upload.wikimedia.org/wikipedia/en/thumb/0/…n_Timeline.jpg/220px-MichaelCrighton_Timeline.jpg')
+    let book6 = new Book('Timeline', 'Michael Crichton', '363', 'no', 'https://images-na.ssl-images-amazon.com/images/I/41SH20ZRMYL.jpg')
     let book7 = new Book('Outliers', 'Malcom Gladwell', '453', 'no', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1271440150l/7630041.jpg')
     let book8 = new Book('1984', 'George Orwell', '263', 'yes', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/1984first.jpg/220px-1984first.jpg')
 
