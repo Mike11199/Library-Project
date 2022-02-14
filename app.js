@@ -351,5 +351,4 @@ function loadSampleLibrary (){
     addEntireLibrarytoGrid();
     saveLibrarytoLocalStorage();
 
-
 }
