@@ -1,6 +1,6 @@
 const form = document.getElementById("myForm")
 const AddCard =  document.getElementById("add_card")
-const loginForm = document.getElementById("bookForm");
+const bookForm = document.getElementById("bookForm");
 const cancelBookBtnForm = document.getElementById("cancelBookBtnForm");
 
 const libraryGrid = document.getElementById("grid-container");
@@ -10,10 +10,14 @@ const numPages = document.getElementById('numPages');
 const bookCover = document.getElementById('bookCover');
 const isRead = document.getElementById('isRead');
 
+let libraryCount=0;
+let myLibrary = [];
 
+
+
+//Change button of read on the library cards when you click the read button
 isRead.addEventListener("click",function(event){
 
- 
 
     if (isRead.value == "yes") {
         isRead.value = "no";
@@ -28,15 +32,9 @@ isRead.addEventListener("click",function(event){
 
 
 
-let libraryCount=0;
 
 
-let myLibrary = [];
-
-
-
-
-loginForm.addEventListener("submit", addBooktoLibrary);
+bookForm.addEventListener("submit", addBooktoLibrary);
 AddCard.addEventListener("click", ToggleForm);
 cancelBookBtnForm.addEventListener("click",closeForm);
 
@@ -178,7 +176,7 @@ const createLibraryCard = (book) => {
     //and elements created for the library card.
     bookTitle.textContent = book.bookTitle;
     bookAuthor.textContent = book.bookAuthor;
-    bookPages.textContent = book.bookPages + "pages";
+    bookPages.textContent = book.bookPages + " pages";
     
 
 
@@ -332,7 +330,7 @@ function loadSampleLibrary (){
     let book1 = new Book('Foundation', 'Issac Asimov', '343', 'yes', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg') 
     let book2 = new Book('The Universe in a Nutshell', 'Stephen Hawking', '332', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/81bKX7EA4cL.jpg') 
    
-    let book4 = new Book('Sapiens: A Brief History of Humankind', 'Yuval Noah Harari', '281 pages', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL.jpg') 
+    let book4 = new Book('Sapiens: A Brief History of Humankind', 'Yuval Noah Harari', '281', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL.jpg') 
     let book5 = new Book('Eiger Dreams', 'Jon Krauker', '323', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/51P8Hpa264L._SX331_BO1,204,203,200_.jpg') 
     
     let book7 = new Book('Outliers', 'Malcom Gladwell', '453', 'no', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1271440150l/7630041.jpg')
