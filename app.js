@@ -15,17 +15,20 @@ let myLibrary = [];
 
 
 
-//Change button of read on the library cards when you click the read button
+//Change "mark as read button" on the add book form when you click the read button
 isRead.addEventListener("click",function(event){
 
 
     if (isRead.value == "yes") {
         isRead.value = "no";
-        isRead.style.backgroundColor="rgb(20, 20, 20)";
+        isRead.style.backgroundColor="rgb(20, 20, 20)"
+        isRead.innerHTML="Unread";
+        
     }
     else if (isRead.value == "no") {
         isRead.value = "yes";
-        isRead.style.backgroundColor="rgb(46, 92, 168)";
+        isRead.style.backgroundColor="darkgreen";
+        isRead.innerHTML="Read";
     }
 
 })
@@ -207,22 +210,41 @@ const createLibraryCard = (book) => {
     
     //on mouseover hide the book cover and show the title, book pages, isread, etc.
     libraryCard.addEventListener("mouseover", function(event)  {
-        bookCover.style.opacity= "10%";
-        readButton.style.opacity= "70%";
-        deleteButton.style.opacity= "70%";
-        bookTitle.style.opacity= "70%";
-        bookAuthor.style.opacity= "70%";
-        bookPages.style.opacity= "70%";
+        bookCover.style.opacity= "30%";
+        deleteButton.style.opacity= "100%";
+        bookTitle.style.opacity= "100%";
+        bookAuthor.style.opacity= "100%";
+        bookPages.style.opacity= "100%";
+       
+        readButton.style.opacity= "100%";
+        readButton.style.color= "rgba(0, 0, 0, 1)";
+        readButton.style.width= "80%";
+        readButton.style.height= "50px";
+        readButton.style.position= "static";
+        readButton.style.color= "rgb(230, 227, 227)";
+        readButton.style.borderRadius="20px";
+        readButton.style.marginLeft="10%";
+
 
     });
 
     libraryCard.addEventListener("mouseout", function(event)  {
         bookCover.style.opacity= "100%";
-        readButton.style.opacity= "0%";
         deleteButton.style.opacity= "0%";
         bookTitle.style.opacity= "0%";
         bookAuthor.style.opacity= "0%";
         bookPages.style.opacity= "0%";
+        readButton.style.position= "absolute";
+       
+        readButton.style.opacity= "80%";
+        readButton.style.color= "rgba(0, 0, 0, 0.0)";
+        readButton.style.width= "20px";
+        readButton.style.height= "20px";
+        readButton.style.marginLeft="";
+        readButton.style.borderRadius="0px";
+
+
+
     });
 
    
