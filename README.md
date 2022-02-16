@@ -31,5 +31,9 @@ A tracker that allows books to be stored in a grid format and marked as read, or
 
 <h2>Desktop Screenshots</h2>
 
-![image](https://user-images.githubusercontent.com/91037796/153800881-f7831570-19a1-4e3a-ad44-b0dfcf029f3c.png)
+![1](https://user-images.githubusercontent.com/91037796/154173228-4e82b411-f42d-45de-a646-0813957422c2.png)
+
+<br /><br />
+
+![2](https://user-images.githubusercontent.com/91037796/154173234-d30d9a95-3cc6-47ea-8d0d-c971abdfc85c.png)
 
