@@ -5,7 +5,8 @@ A tracker that allows books to be stored in a grid format and marked as read, or
 
 <br />
 
-[<img alt="alt_text" width="200px" src="https://user-images.githubusercontent.com/91037796/151688958-059ec882-a5ee-41cc-8985-c9ed26969de3.png" />](https://mike11199.github.io/Library-Project/)
+[<img alt="alt_text" width="2000px" src="https://user-images.githubusercontent.com/91037796/181883690-6ab88fbe-78f2-47e2-acef-e5dad36d7444.png" />](https://mike11199.github.io/Library-Project/)
+
 
 <br />
 <h2>Concepts learned from this project</h2>
@@ -26,14 +27,11 @@ A tracker that allows books to be stored in a grid format and marked as read, or
 
 
 
+<h2>Additional Screenshots</h2>
 
-
-
-<h2>Desktop Screenshots</h2>
-
-![1](https://user-images.githubusercontent.com/91037796/154173228-4e82b411-f42d-45de-a646-0813957422c2.png)
-
-<br /><br />
+<br />
+<br />
 
 ![2](https://user-images.githubusercontent.com/91037796/154173234-d30d9a95-3cc6-47ea-8d0d-c971abdfc85c.png)
 
+[<img alt="alt_text" width="800px" src="https://user-images.githubusercontent.com/91037796/181884475-db7aca26-edcc-4731-a9cc-fdff48f1cee4.png" />](https://mike11199.github.io/Library-Project/)
