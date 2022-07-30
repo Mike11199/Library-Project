@@ -3,7 +3,12 @@
 
 A tracker that allows books to be stored in a grid format and marked as read, or deleted from the list.  Supports book cover images if an URL is added in the add book dialog form pop up.
 
+
 <br />
+
+[<img alt="alt_text" width="200px" src="https://user-images.githubusercontent.com/91037796/151688958-059ec882-a5ee-41cc-8985-c9ed26969de3.png" />](https://mike11199.github.io/Library-Project/)
+<br /><br />
+
 
 [<img alt="alt_text" width="2000px" src="https://user-images.githubusercontent.com/91037796/181883690-6ab88fbe-78f2-47e2-acef-e5dad36d7444.png" />](https://mike11199.github.io/Library-Project/)
 
@@ -29,7 +34,7 @@ A tracker that allows books to be stored in a grid format and marked as read, or
 
 <h2>Additional Screenshots</h2>
 
-<br />
+
 <br />
 
 ![2](https://user-images.githubusercontent.com/91037796/154173234-d30d9a95-3cc6-47ea-8d0d-c971abdfc85c.png)
