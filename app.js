@@ -358,15 +358,25 @@ function loadSampleLibrary (){
     let book7 = new Book('Outliers', 'Malcom Gladwell', '453', 'no', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1271440150l/7630041.jpg')
     let book8 = new Book('1984', 'George Orwell', '263', 'yes', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/1984first.jpg/220px-1984first.jpg')
 
+    let book9 = new Book("Man's Search for Meaning", 'Viktor E. Frankl', '195', 'yes', 'https://m.media-amazon.com/images/I/51L04pj+1JL._SL500_.jpg')
+    let book10 = new Book("The Upright Thinkers: The Human Journey From Living in Trees to Understanding the Cosmos", 'Leonard Mlodinow', '212', 'yes', 'https://m.media-amazon.com/images/I/41nhfA1lSQL._SL500_.jpg')
+    let book11 = new Book("The Last Wish", 'Andrzej Sapkowski', '142', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/81DRSc6YPjS.jpg')
+    let book12 = new Book("Astrophysics for People in a Hurry", 'Neil deGrasse Tyson', '76', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/91GYFNzyXlS.jpg')
+    let book13 = new Book("The Drunkard's Walk:  How Randomness Rules our Lives", 'Leonard Mlodinow', '222', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/91Qt1C+4GuL.jpg')
+    let book14 = new Book("The Time Machine", 'H.G Wells', '222', 'yes', 'https://images-na.ssl-images-amazon.com/images/I/81cbfyj4AZL.jpg')
+
     myLibrary.push(book1);
-    myLibrary.push(book2);
-    
+    myLibrary.push(book2);    
     myLibrary.push(book4);
-    myLibrary.push(book5);
-    
+    myLibrary.push(book5);   
     myLibrary.push(book7);
     myLibrary.push(book8);
-
+    myLibrary.push(book9);
+    myLibrary.push(book10);
+    myLibrary.push(book11);
+    myLibrary.push(book12);
+    myLibrary.push(book13);
+    myLibrary.push(book14);
 
     addEntireLibrarytoGrid();
     saveLibrarytoLocalStorage();
